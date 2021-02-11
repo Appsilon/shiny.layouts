@@ -1,0 +1,34 @@
+Package: shiny.layouts
+Type: Package
+Title: CSS grid and layouts for Shiny
+Version: 0.4.3
+Authors@R: c(
+  person("Marek", "Rogala", email = "marek@appsilon.com", role = "cre"),
+  person("Dominik", "Krzeminski", email = "dominik@appsilon.com", role = "aut"),
+  person("Paweł", "Przytuła", email = "pawel@appsilon.com", role = "aut"),
+  person("Jakub", "Chojna", email = "jakub.chojna@appsilon.com", role = "aut"),
+  person("Paweł", "Przytuła", email = "pawel@appsilon.com", role = "ctb"),
+  person("Kamil", "Żyła", email = "kamil@appsilon.com", role = "ctb"),
+  person("Rabii", "Bouhestine", email = "rabii@appsilon.com", role = "ctb"),
+  person(family = "Appsilon Sp. z o.o.", role = c("cph")))
+Description: CSS grid and layout helpers for Shiny applications on top of it.
+BugReports: https://github.com/Appsilon/shiny.layouts/issues
+Encoding: UTF-8
+LazyData: TRUE
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+Imports:
+    shiny (>= 0.12.1),
+    htmltools (>= 0.2.6),
+    htmlwidgets (>= 0.8),
+    purrr (>= 0.2.2),
+    stats,
+    magrittr,
+    glue,
+    R6
+Suggests:
+    knitr,
+    testthat,
+    lintr,
+    covr
+RoxygenNote: 7.1.1
