@@ -79,7 +79,7 @@ list_of_area_tags <- function(area_names) {
       mustache_id <- "{{ grid_id }}"
       mustache_css <- paste0("{{ ", name, "_custom_css }}")
       mustache_area <- paste("{{", name, "}}")
-      return(HTML(
+      return(htmltools::HTML(
         glue::glue('<div id="{mustache_id}-{name}" style="grid-area: {name}; {mustache_css}">{mustache_area}</div>')
       ))
     }
@@ -140,6 +140,7 @@ list_of_area_tags <- function(area_names) {
 #' ))
 #'
 #' if (interactive()) display_grid(subGrid)
+#' @importFrom magrittr %>%
 #' @export
 grid_template <- function(default = NULL, mobile = NULL) {
 
@@ -297,7 +298,7 @@ display_grid <- function(grid_template) {
   area_styles <- as.list(setNames(styles, grid_template$area_names))
 
   shiny::runApp(list(
-      ui = semanticPage(
+      ui = shinySemantic::ssemanticPage(
         grid(
           grid_template,
           container_style = "border: 1px dashed #000",
