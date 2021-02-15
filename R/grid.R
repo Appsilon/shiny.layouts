@@ -298,7 +298,7 @@ display_grid <- function(grid_template) {
   area_styles <- as.list(setNames(styles, grid_template$area_names))
 
   shiny::runApp(list(
-      ui = shinySemantic::semanticPage(
+      ui = shiny.semantic::semanticPage(
         grid(
           grid_template,
           container_style = "border: 1px dashed #000",
