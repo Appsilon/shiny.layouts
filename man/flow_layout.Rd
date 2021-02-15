@@ -45,14 +45,16 @@ With the default settings this layout closely resembles the \code{flowLayout}
 from Shiny.
 }
 \examples{
-if (interactive()) {
-  ui <- semanticPage(
-    flow_layout(
-      numericInput("rows", "How many rows?", 5),
-      selectInput("letter", "Which letter?", LETTERS),
-      sliderInput("value", "What value?", 0, 100, 50)
+library(shiny)
+library(shiny.semantic)
+  if (interactive()) {
+    ui <- semanticPage(
+      flow_layout(
+        numericInput("rows", "How many rows?", 5),
+        selectInput("letter", "Which letter?", LETTERS),
+        sliderInput("value", "What value?", 0, 100, 50)
+      )
     )
-  )
-  shinyApp(ui, server = function(input, output) {})
-}
+    shinyApp(ui, server = function(input, output) {})
+  }
 }

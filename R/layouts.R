@@ -173,6 +173,7 @@ sidebarLayout <- function(sidebarPanel,
 #' @rdname split_layout
 #'
 #' @examples
+#' library(shiny.semantic)
 #' if (interactive()) {
 #'   #' Server code used for all examples
 #'   server <- function(input, output) {
@@ -258,6 +259,7 @@ splitLayout <- function(..., cellWidths = NULL, cellArgs = "", style = NULL) {
 #' @export
 #' @rdname vertical_layout
 #' @examples
+#' library(shiny.semantic)
 #' if (interactive()) {
 #'   ui <- semanticPage(
 #'     verticalLayout(
@@ -333,6 +335,8 @@ verticalLayout <- function(..., fluid = NULL) {
 #' @rdname flow_layout
 #'
 #' @examples
+#' library(shiny)
+#' library(shiny.semantic)
 #' if (interactive()) {
 #'   ui <- semanticPage(
 #'     flow_layout(

@@ -32,6 +32,7 @@ Lays out elements horizontally, dividing the available horizontal space into
 equal parts (by default) or specified by parameters.
 }
 \examples{
+library(shiny.semantic)
 if (interactive()) {
   #' Server code used for all examples
   server <- function(input, output) {
