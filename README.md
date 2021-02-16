@@ -52,12 +52,8 @@ once you’re done with new feature or bug fix.<br>
 
 **Changes in documentation**
 
-Both repository **README.md** file and an official documentation page
-are generated with Rmarkdown, so if there is a need to update them,
-please modify accordingly a **README.Rmd** file and use “Knit”.
-
 Documentation is rendered with `pkgdown`. Just run
-`pkgdown::build_site()` after rendering new **README.md**.
+`pkgdown::build_site()` after making changes.
 
 **Changes in vignettes**
 
