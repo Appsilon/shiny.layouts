@@ -1,10 +1,10 @@
 ---
-title: "Build your first dynamic shiny.semantic app using layout and grid"
+title: "Easily use CSS grid and predefined layouts in Shiny"
 author: "Appsilon"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Build your first dynamic shiny.semantic app using layout and grid}
+  %\VignetteIndexEntry{Easily use CSS grid and predefined layouts in Shiny}
   %\VignetteEngine{knitr::knitr}
   %\VignetteEncoding{UTF-8}
 ---
@@ -21,9 +21,14 @@ library(shiny.layouts)
 ```
 
 
+Two main things `shiny.layouts` provides is pre-defined app layouts (like app with a sidebar and a main panel) and easy interface to put elements in a custom grid (based on CSS grid).
+In this article we will see how to use these two features.
+To make examples look better and shorten their code, we will use [shiny.semantic](https://github.com/Appsilon/shiny.semantic), but shiny.layouts works with any UI framework.
+
+
 ### Built-in layouts
 
-Now let's add sidebar layout `sidebar_layout()` with a sidebar panel `sidebar_panel()` and main panel `main_panel()`. The sidebar is displayed with a distinct background color and typically contains input controls. The main area occupies 2/3 of the horizontal width and typically contains outputs.
+Let's start by defining a page wtih a sidebar layout (`sidebar_layout()`) with a sidebar panel (`sidebar_panel()`) and main panel (`main_panel()`). The sidebar is displayed with a distinct background color and typically contains input controls. The main area occupies 2/3 of the horizontal width and typically contains outputs.
 
 <img src="intro_images/s1.png" alt="screen2" width="800"/>
 
@@ -43,7 +48,7 @@ server <- function(input, output, session) {}
 shinyApp(ui, server)
 ```
 
-Next let's fill in the main panel `main_panel()` with a Fomantic (Semantic previously) UI segment containing 2 cards.
+Next let's fill in the main panel `main_panel()` with a Semantic UI segment containing 2 cards.
 
 <img src="intro_images/s2.png" alt="screen3" width="800"/>
 
@@ -174,8 +179,8 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-There is more layouts that you can use. Just check the documentation of: `splitLayout`,
-`flow_layout`, `vertical_layout` and some more!
+There is more layouts that you can use. Just check the documentation of: `split_layout`,
+`flow_layout`, `vertical_layout` and more.
 
 ###  Grid templates
 
@@ -241,5 +246,5 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-You can define grids for different screen sizes. [Here](https://github.com/Appsilon/shiny.semantic/blob/develop/examples/grid/app.R) is an example on how to define
+You can define grids for different screen sizes. [Here](https://github.com/Appsilon/shiny.layouts/blob/develop/examples/grid/app.R) is an example on how to define
 it for mobile.

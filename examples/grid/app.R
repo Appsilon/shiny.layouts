@@ -1,5 +1,5 @@
 library(shiny)
-library(shiny.semantic)
+library(shiny.layouts)
 
 # Here we define the grid_template that we will pass to our grid
 myGrid <- grid_template(
@@ -52,7 +52,7 @@ subGrid <- grid_template(
   )
 )
 
-ui <- semanticPage(
+ui <- bootstrapPage(
   grid(myGrid,
        # We can define the css style of the grid using container_style
        container_style = "border: 5px solid #3d7ea6",

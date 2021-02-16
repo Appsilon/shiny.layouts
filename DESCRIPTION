@@ -1,7 +1,7 @@
 Package: shiny.layouts
 Type: Package
 Title: CSS grid and layouts for Shiny
-Version: 0.4.3
+Version: 0.1.0
 Authors@R: c(
   person("Marek", "Rogala", email = "marek@appsilon.com", role = "cre"),
   person("Dominik", "Krzeminski", email = "dominik@appsilon.com", role = "aut"),
@@ -31,5 +31,5 @@ Suggests:
     testthat,
     lintr,
     covr,
-    shiny.semantic(>= 0.4.0)
+    shiny.semantic
 RoxygenNote: 7.1.1
