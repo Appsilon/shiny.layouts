@@ -1,4 +1,4 @@
-title: SHINY.SEMANTIC
+title: SHINY.LAYOUTS
 template:
   params:
     bootswatch: yeti
@@ -23,7 +23,7 @@ navbar:
       text: "CoC"
       href: CODE_OF_CONDUCT.html
     - icon: fa-github fa-lg
-      href: https://github.com/Appsilon/shiny.semantic
+      href: https://github.com/Appsilon/shiny.layouts
     - icon: fa-twitter fa-lg
       href: https://twitter.com/Appsilon
 
@@ -31,109 +31,21 @@ articles:
 - title: All tutorials
   desc: ~
   contents:
-  - '`basics`'
   - '`intro`'
-  - '`semantic_integration`'
-  - '`fomantic_js`'
 
 reference:
-- title: Fomantic (semantic) page
-  contents:
-  - '`semanticPage`'
-
-- title: UI elements
-  desc: All functions that generate static UI elements.
-  contents:
-  - '`button`'
-  - '`card`'
-  - '`cards`'
-  - '`dropdown_menu`'
-  - '`fields`'
-  - '`field`'
-  - '`form`'
-  - '`header`'
-  - '`horizontal_menu`'
-  - '`icon`'
-  - '`label`'
-  - '`label_tag`'
-  - '`list_container`'
-  - '`menu`'
-  - '`menu_divider`'
-  - '`menu_header`'
-  - '`menu_item`'
-  - '`message_box`'
-  - '`segment`'
-  - '`tabset`'
-  - '`update_tabset`'
-  - '`accordion`'
-
-- title: Action elements
-  desc: All functions that generate or update active `shiny.semantic` objects.
-  contents:
-  - '`actionButton`'
-  - '`action_button`'
-  - '`calendar`'
-  - '`checkbox_input`'
-  - '`counter_button`'
-  - '`dateInput`'
-  - '`date_input`'
-  - '`dropdown_input`'
-  - '`multiple_checkbox`'
-  - '`multiple_radio`'
-  - '`numericInput`'
-  - '`numeric_input`'
-  - '`range_input`'
-  - '`rating_input`'
-  - '`render_menu_link`'
-  - '`selectInput`'
-  - '`sliderInput`'
-  - '`slider_input`'
-  - '`textAreaInput`'
-  - '`textInput`'
-  - '`text_input`'
-  - '`toggle`'
-  - '`file_input`'
-  - '`fileInput`'
-  - '`progress`'
-  - '`toast`'
-  - '`updateActionButton`'
-  - '`update_action_button`'
-  - '`updateNumericInput`'
-  - '`update_numeric_input`'
-  - '`updateSelectInput`'
-  - '`update_dropdown_input`'
-  - '`updateSliderInput`'
-  - '`update_calendar`'
-  - '`update_range`'
-  - '`update_rating_input`'
-  - '`update_slider`'
-
-- title: Modal functions
-  desc: Functions for modals generation.
-  contents:
-  - '`modal`'
-  - '`modalDialog`'
-  - '`create_modal`'
-  - '`show_modal`'
-  - '`showModal`'
-  - '`remove_modal`'
-  - '`removeModal`'
-  - '`remove_all_modals`'
-  - '`hide_modal`'
-
-- title: Search functions
-  desc: Functions for search API.
-  contents:
-  - '`register_search`'
-  - '`search_field`'
-  - '`search_selection_api`'
-  - '`search_selection_choices`'
-
-- title: Layouts and grid
-  desc: Function for layouts and grid.
+- title: Grid
+  desc: Functions for generic grid.
   contents:
   - '`grid`'
   - '`grid_template`'
+  - '`data_frame_to_css_grid_template_areas`'
+  - '`grid_container_css`'
+  - '`list_of_area_tags`'
+
+- title: Layouts
+  desc: Functions for predefined layouts.
+  contents:
   - '`sidebar_layout`'
   - '`sidebarLayout`'
   - '`sidebar_panel`'
@@ -147,18 +59,9 @@ reference:
   - '`split_layout`'
   - '`splitLayout`'
 
-- title: Constants
-  desc: These constants contain important `shiny.semantic` values.
+- title: Utilities
+  desc: Helpful functions
   contents:
-  - '`COLOR_PALETTE`'
-  - '`SIZE_LEVELS`'
-  - '`SUPPORTED_THEMES`'
-
-- title: Other
-  desc: Other useful functions or objects.
-  contents:
-  - '`semantic_DT`'
-  - '`shiny_input`'
-  - '`shiny_text_input`'
-  - '`uiinput`'
-  - '`uirender`'
+  - '`display_grid`'
+  - '`get_numeric`'
+  - '`split_args`'

@@ -1,4 +1,5 @@
 library(shiny)
+library(shiny.layouts)
 library(shiny.semantic)
 
 ui <- semanticPage(

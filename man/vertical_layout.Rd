@@ -35,6 +35,7 @@ vertical layout grid object
 Lays out elements vertically, one by one below one another.
 }
 \examples{
+library(shiny.semantic)
 if (interactive()) {
   ui <- semanticPage(
     verticalLayout(

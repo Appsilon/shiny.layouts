@@ -45,6 +45,8 @@ With the default settings this layout closely resembles the \code{flowLayout}
 from Shiny.
 }
 \examples{
+library(shiny)
+library(shiny.semantic)
 if (interactive()) {
   ui <- semanticPage(
     flow_layout(

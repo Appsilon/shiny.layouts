@@ -1,4 +1,5 @@
 library(shiny)
+library(shiny.layouts)
 library(shiny.semantic)
 
 grid_cell_style = "
